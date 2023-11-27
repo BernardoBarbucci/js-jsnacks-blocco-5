@@ -67,8 +67,5 @@ const cars = [
     },
 ];
 
-const filteredCars = cars.filter((car) => {
-    if (cars.includes = 'electric'){
-        return 
-    }
-})
+const gasolineCars = cars.filter((car) => car.engine === 'gasoline');
+console.log(gasolineCars);
