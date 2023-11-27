@@ -39,7 +39,7 @@ const cars = [
     {
         brand: 'Ferrari',
         type: 'sf-90 stradale',
-        engine: 'electric gasoline',
+        engine: 'electric',
     },
 
     {
