@@ -39,7 +39,7 @@ const cars = [
     {
         brand: 'Ferrari',
         type: 'sf-90 stradale',
-        engine: 'electric',
+        engine: 'electric gasoline',
     },
 
     {
@@ -68,4 +68,8 @@ const cars = [
 ];
 
 const gasolineCars = cars.filter((car) => car.engine === 'gasoline');
-console.log(gasolineCars);
+console.log('Auto a benzina: ', gasolineCars);
+const dieselCars = cars.filter((car) => car.engine === 'diesel');
+console.log('Auto a diesel: ', dieselCars);
+const electricCars = cars.filter((car) => car.engine === 'electric');
+console.log('Auto elettriche: ', electricCars);
