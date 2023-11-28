@@ -16,3 +16,22 @@ const arraySecond = [
     '4',
     '5'
 ];
+
+// faccio prima la funzione che pesca da entrambi e poi cerco di alternarla
+function alternateFishing(firstBox, secondBox) {
+    const result = [];
+    const maxLength = Math.max(firstBox.length, secondBox.length);
+    
+    for (let i = 0; i < maxLength; i++) {
+        if (i < firstBox.length) {
+            result.push(firstBox[i]);
+        }
+        if (i < secondBox.length) {
+            result.push(secondBox[i]);
+        }
+    }
+    return result;
+}
+
+const resultFinale = alternateFishing(arrayFirst, arraySecond);
+console.log(resultFinale);
