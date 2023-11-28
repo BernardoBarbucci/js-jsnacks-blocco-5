@@ -14,7 +14,9 @@ const volleyTeams = [
 ];
 
 const teamInfos = volleyTeams.map(team => ({
-    nome: x,
-    punti fatti: x,
-    falli subiti: x,
+    nome: team,
+    puntiFatti: 10,
+    falliSubiti: 20,
 }));
+
+console.log(teamInfos);
