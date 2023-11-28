@@ -13,5 +13,7 @@ const browserElement = {
 };
 
 function closeElement(social){
+    const socialIndex = browserElement.tab.indexOf(social);
+
     
 }
