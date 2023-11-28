@@ -8,12 +8,25 @@
 // Nel caso la tab fosse attiva, deve attivare la successiva.
 
 const browserElement = {
-    "tab": ["Facebook", "GitHub", "Gmail"],
+    "tab": ["Facebook", "GitHub", "Gmail", "Instagram", "Twitter", "Gmail", "Tiktok"],
     "activeTab": 0
 };
 
-function closeElement(social){
-    const socialIndex = browserElement.tab.indexOf(social);
+const blackList = ['facebook', 'instagram', 'tiktok'];
 
-    
-}
+browserElement.tab = browserElement.tab.filter((social) => {
+    if ( !blackList.includes(social.toLowerCase())){
+        return true;
+    }
+}) ; 
+
+console.log(browserElement);
+
+
+
+
+// function closeElement(social){
+//     const socialIndex = browserElement.tab.indexOf(social);
+
+
+// }
