@@ -15,8 +15,8 @@ const volleyTeams = [
 
 const teamInfos = volleyTeams.map(team => ({
     nome: team,
-    puntiFatti: 10,
-    falliSubiti: 20,
+    puntiFatti: Math.floor(Math.random() * 60),
+    falliSubiti: Math.floor(Math.random() * 15),
 }));
 
 console.log(teamInfos);
